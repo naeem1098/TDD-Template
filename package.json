@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Oyinna/recipe_app.git"
+    "url": "git+https://github.com/naeem1098/TDD-Template.git"
   },
   "keywords": [
     "recipes"
@@ -24,9 +24,9 @@
   "author": "Chinyelu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Oyinna/recipe_app/issues"
+    "url": "https://github.com/naeem1098/TDD-Template/issues"
   },
-  "homepage": "https://github.com/Oyinna/recipe_app#readme",
+  "homepage": "https://github.com/naeem1098/TDD-Template#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
