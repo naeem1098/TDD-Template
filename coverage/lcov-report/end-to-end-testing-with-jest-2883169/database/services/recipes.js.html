@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">35.71% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">35.71% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/14</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -107,26 +107,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -140,27 +140,27 @@ const RecipesClass = {
     return response;
   },
 &nbsp;
-  allRecipes: <span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {
-    const response = <span class="cstat-no" title="statement not covered" >await Recipes.find();</span>
-<span class="cstat-no" title="statement not covered" >    return response;</span>
+  allRecipes: async () =&gt; {
+    const response = await Recipes.find();
+    return response;
   },
 &nbsp;
-  fetchById: <span class="fstat-no" title="function not covered" >as</span>ync (id) =&gt; {
-<span class="cstat-no" title="statement not covered" >    try {</span>
-      const response = <span class="cstat-no" title="statement not covered" >await Recipes.findById(id);</span>
-<span class="cstat-no" title="statement not covered" >      return response;</span>
+  fetchById: async (id) =&gt; {
+    try {
+      const response = await Recipes.findById(id);
+      return response;
     } catch (err) {
     }
   },
 &nbsp;
-  fetchByIdAndUpdate: <span class="fstat-no" title="function not covered" >as</span>ync (id, recipesDetail) =&gt; {
-    const response = <span class="cstat-no" title="statement not covered" >await Recipes.findByIdAndUpdate(id, { $set: recipesDetail }, { new: true });</span>
-<span class="cstat-no" title="statement not covered" >    return response;</span>
+  fetchByIdAndUpdate: async (id, recipesDetail) =&gt; {
+    const response = await Recipes.findByIdAndUpdate(id, { $set: recipesDetail }, { new: true });
+    return response;
   },
 &nbsp;
-  fetchByIdAndDelete: <span class="fstat-no" title="function not covered" >as</span>ync (id) =&gt; {
-    const response = <span class="cstat-no" title="statement not covered" >await Recipes.findByIdAndDelete(id);</span>
-<span class="cstat-no" title="statement not covered" >    return response;</span>
+  fetchByIdAndDelete: async (id) =&gt; {
+    const response = await Recipes.findByIdAndDelete(id);
+    return response;
   },
 };
 &nbsp;
@@ -172,7 +172,7 @@ module.exports = RecipesClass;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Apr 12 2022 11:19:52 GMT+0500 (Pakistan Standard Time)
+                at Wed Apr 13 2022 11:11:56 GMT+0500 (Pakistan Standard Time)
             </div>
         <script src="../../../prettify.js"></script>
         <script>

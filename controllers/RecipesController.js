@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const Recipes = require('../database/services/recipes');
 
 const RecipesController = {
